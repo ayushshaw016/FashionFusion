@@ -8,18 +8,20 @@ const Navbar = () => {
     <>
       <div className="flex flex-col items-center md:flex-row md:justify-between my-1 md:my-2">
         <div>
-          <Image src={Logo} className="w-12 h-12 md:w-20 md:h-20" />
+          <Link href="/">
+            <Image src={Logo} className="w-12 h-12 md:w-20 md:h-20" />
+          </Link>
         </div>
         <div>
           <ul className="flex flex-row">
-            <Link href="/">
+            <Link href="/Tshirts">
               <li className="mx-1  sm:mx-2 md:mx-4 text-sm sm:text-md md:text-lg lg:text-xl font-bold">
-                Home
+                Tshirts
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/Hoodies">
               <li className="mx-1  sm:mx-2 md:mx-4 text-sm sm:text-md md:text-lg lg:text-xl font-bold">
-                Home
+                Hoodies
               </li>
             </Link>
             <Link href="/">

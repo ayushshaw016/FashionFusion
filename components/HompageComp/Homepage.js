@@ -6,11 +6,7 @@ import background from "../../Assets/background.png";
 const Homepage = () => {
   return (
     <>
-      <Navbar />
-      <div>
-        <Image src={background} className="h-[80vh]" />
-      </div>
-      <Footer />
+      <Image src={background} className="h-[80vh]" />
     </>
   );
 };
