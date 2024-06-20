@@ -6,7 +6,7 @@ import { CiShoppingCart } from "react-icons/ci";
 const Navbar = () => {
   return (
     <>
-      <div className="flex flex-col items-center md:flex-row md:justify-between my-1 md:my-2">
+      <div className="flex flex-col items-center md:flex-row md:justify-between my-1 md:my-2 shadow-xl">
         <div>
           <Link href="/">
             <Image src={Logo} className="w-12 h-12 md:w-20 md:h-20" />
@@ -24,14 +24,14 @@ const Navbar = () => {
                 Hoodies
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/Stickers">
               <li className="mx-1  sm:mx-2 md:mx-4 text-sm sm:text-md md:text-lg lg:text-xl font-bold">
-                Home
+                Stickers
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/Mugs">
               <li className="mx-1  sm:mx-2 md:mx-4 text-sm sm:text-md md:text-lg lg:text-xl font-bold">
-                Home
+                Mugs
               </li>
             </Link>
           </ul>
