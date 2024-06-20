@@ -1,6 +1,6 @@
 import React from "react";
 import { t1, t2, t3, t4, t5, t6 } from "../../Assets/Tshirts/tshirtspic";
-import { TshirtCard } from "./Tshirtcard";
+import { TshirtCards } from "./Tshirtcard";
 const Tshirts = () => {
   const tshirtdata = [
     { IMG: t1, category: "T-Shirts", Brand: "COBBS", Price: "₹600" },
@@ -41,7 +41,7 @@ const Tshirts = () => {
     <>
       <div className="bg-slate-50 my-12">
         {/* <p>T-shirts</p> */}
-        <TshirtCard tshirtdata={tshirtdata} />
+        <TshirtCards tshirtdata={tshirtdata} />
       </div>
     </>
   );

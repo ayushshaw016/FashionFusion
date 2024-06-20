@@ -1,7 +1,12 @@
+import Sticker from "@/components/StickersComp/Sticker";
 import React from "react";
 
-const Stickersr = () => {
-  return <div>Stickersr</div>;
+const Stickerr = () => {
+  return (
+    <>
+      <Sticker />
+    </>
+  );
 };
 
-export default Stickersr;
+export default Stickerr;

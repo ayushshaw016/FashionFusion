@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const { default: Image } = require("next/image");
 
-const TshirtCards = ({ tshirtdata }) => {
+const HoodieCards = ({ hoodiesdata }) => {
   return (
     <>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
-        {tshirtdata.map((data, index) => (
+        {hoodiesdata.map((data, index) => (
           <div
             key={index}
             className="border border-solid border-gray-200 mx-1 sm:mx-2 md:mx-6 mt-2 md:mt-4 hover:shadow-lg hover:cursor-pointer hover:bg-white rounded-md hover:scale-105"
@@ -35,4 +35,4 @@ const TshirtCards = ({ tshirtdata }) => {
   );
 };
 
-export { TshirtCards };
+export { HoodieCards };

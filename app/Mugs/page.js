@@ -1,7 +1,8 @@
+import Mugs from "@/components/MugsComp/Mugs";
 import React from "react";
 
 const Mugsr = () => {
-  return <div>Mugsr</div>;
+  return <Mugs />;
 };
 
 export default Mugsr;
