@@ -44,8 +44,8 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className="mt-3 md:mt-6">
-        <div className="text-center">
+      <div className="mt-3 md:mt-6 border-t-2 border-solid border-gray-400 rounded-md mx-2 md:mx-4 shadow-lg">
+        <div className="text-center mt-2 md:mt-6">
           <p className="text-md sm:text-lg md:text-xl lg:text-3xl font-bold">
             Fusion of Elegance and Trend
           </p>
@@ -70,7 +70,7 @@ const Footer = () => {
         <div>
           <FooterCard footerdata={footerdata} />
         </div>
-        <div className="mx-2 mt-4  md:mt-8 flex flex-col md:flex-row justify-between">
+        <div className="mx-2 my-4  md:my-8 flex flex-col md:flex-row justify-between">
           <div className="">
             <Link href="/">
               <Image src={logo} className="w-14 h-14" />

@@ -122,9 +122,12 @@ const Navbar = () => {
               </div>
             </li>
           </ul>
-          <div className="flex justify-center mt-1">
+          <div className="flex justify-between my-1">
             <button className="bg-blue-400 text-white text-sm md:text-md lg:text-xl px-2 py-1 rounded-md hover:bg-green-500">
               CheckOut
+            </button>
+            <button className="bg-blue-400 text-white text-sm md:text-md lg:text-xl px-2 py-1 rounded-md hover:bg-red-500 ml-1 md:ml-2">
+              Clear Cart
             </button>
           </div>
           {/* Creating the X button */}
