@@ -57,7 +57,7 @@ const Navbar = () => {
         {/* Creating the cart Page */}
         <div
           ref={ref}
-          className="sidecart absolute top-0 right-0 bg-blue-100  transform transition-transform translate-x-full px-3 z-50"
+          className="sidecart absolute top-0 right-0 bg-blue-100  transform transition-transform translate-x-full pl-4 z-50"
         >
           <h2 className="text-md md:text-xl font-bold">Shopping Cart</h2>
           <ul className="list-decimal mx-2">

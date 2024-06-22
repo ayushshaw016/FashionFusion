@@ -70,73 +70,83 @@ const Footer = () => {
         <div>
           <FooterCard footerdata={footerdata} />
         </div>
-        <div className="mx-2 my-4  md:my-8 flex flex-col md:flex-row justify-between">
-          <div className="">
-            <Link href="/">
-              <Image src={logo} className="w-14 h-14" />
-            </Link>
-            <p className="text-wrap text-sm md:text-md">
-              At FashionFusion, we believe fashion is more than just clothing
+        <div className="text-center mt-2 md:mt-6">
+          <Link href="/">
+            <Image src={logo} className="w-14 h-14 mx-auto" />
+          </Link>
+          <p className="text-wrap text-sm md:text-md text-center ">
+            At FashionFusion, we believe fashion is more than just clothing.At
+            FashionFusion, we believe fashion is more than just clothing.At
+            FashionFusion, we believe fashion is more than just clothing
+          </p>
+        </div>
+        <div className="mx-2 my-4  md:my-8 flex flex-row justify-between">
+          <div className="mx-1 my-2 md:mt-0">
+            <p className="text-xs sm:text-sm md:text-lg font-bold">
+              Categories
+            </p>
+            <p className="text-xs sm:text-sm md:text-md hover:cursor-pointer hover:underline">
+              First Line
+            </p>
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
+            </p>
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
+            </p>
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
             </p>
           </div>
           <div className="mx-1 my-2 md:mt-0">
-            <p className="text-md md:text-lg font-bold">Categories</p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
+            <p className="text-xs sm:text-sm md:text-lg font-bold">
+              Categories
+            </p>
+            <p className="text-xs sm:text-sm md:text-md hover:cursor-pointer hover:underline">
               First Line
             </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Seocnd Line
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
             </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Third Line
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
             </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Fourth Line
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
             </p>
           </div>
           <div className="mx-1 my-2 md:mt-0">
-            <p className="text-md md:text-lg font-bold">Categories</p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
+            <p className="text-xs sm:text-sm md:text-lg font-bold">
+              Categories
+            </p>
+            <p className="text-xs sm:text-sm md:text-md hover:cursor-pointer hover:underline">
               First Line
             </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Seocnd Line
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
             </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Third Line
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
             </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Fourth Line
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
             </p>
           </div>
           <div className="mx-1 my-2 md:mt-0">
-            <p className="text-md md:text-lg font-bold">Categories</p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
+            <p className="text-xs sm:text-sm md:text-lg font-bold">
+              Categories
+            </p>
+            <p className="text-xs sm:text-sm md:text-md hover:cursor-pointer hover:underline">
               First Line
             </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Seocnd Line
-            </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Third Line
-            </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Fourth Line
-            </p>
-          </div>
-          <div className="mx-1 my-2 md:mt-0">
-            <p className="text-md md:text-lg font-bold">Categories</p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
               First Line
             </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Seocnd Line
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
             </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Third Line
-            </p>
-            <p className="text-sm md:text-md hover:cursor-pointer hover:underline">
-              Fourth Line
+            <p className="text-xs md:text-md hover:cursor-pointer hover:underline">
+              First Line
             </p>
           </div>
         </div>

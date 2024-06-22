@@ -1,11 +1,26 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import t5 from "../../../Assets/Tshirts/t5.png";
 
 const slug = () => {
+  const [pin, setpin] = useState();
+  const [service, setservice] = useState();
+  const checkavailability = async () => {
+    let pins = await fetch("http://localhost:3000/api/pincode");
+    let pinjson = await pins.json();
+    if (pinjson.includes(parseInt(pin))) {
+      setservice(true);
+    } else {
+      setservice(false);
+    }
+  };
+  const onchangePin = (e) => {
+    setpin(e.target.value);
+  };
   return (
     <>
-      <div className="flex flex-col justify-center items-center w-[60vw] mx-auto border border-solid border-gray-300 my-8 md:my-12 p-4 md:p-8">
+      <div className="flex flex-col justify-center items-center w-[60vw] mx-auto border border-solid border-gray-300 my-8 md:my-12 p-4 md:p-2 ">
         <div>
           <Image src={t5} />
         </div>
@@ -54,11 +69,33 @@ const slug = () => {
 
           <div>
             <button className="text-sm md:text-md bg-blue-400 px-1 py-0.5 md:px-2 md:py-1 rounded-md text-white hover:bg-green-500 mx-2 md:mx-6">
-              CheckOut
+              Buy Now
             </button>
             <button className="text-sm md:text-md bg-blue-400 px-1 py-0.5 md:px-2 md:py-1 rounded-md text-white hover:bg-blue-600 mx-2 md:mx-6">
               Add to Cart
             </button>
+          </div>
+          <div className="pincode mt-2">
+            <form>
+              <input
+                type="text"
+                className="border border-solid border-gray-300 w-[25vw] md:w-[15vw] px-1 md:px-2 text-sm md:text-md"
+                placeholder="Enter Pincode"
+                onChange={onchangePin}
+              />
+            </form>
+            <button
+              className="bg-blue-400 text-white px-1 py-0.5 mt-1 md:mt-2 rounded-md hover:bg-green-400"
+              onClick={checkavailability}
+            >
+              Check Availability
+            </button>
+            {!service && service != null && (
+              <p className="text-red-400 px-1 ">We Don't Deliver here</p>
+            )}
+            {service && service != null && (
+              <p className="text-green-500">We Deliver here</p>
+            )}
           </div>
         </div>
       </div>
